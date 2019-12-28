@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Droid", "Xamarin.Droid\Xamarin.Droid.csproj", "{80B4417B-5F5A-4694-AA10-4A6B09065286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.WebApi", "NetCore.WebApi\NetCore.WebApi.csproj", "{617D3D18-085C-468A-B5C9-D22E39019557}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80B4417B-5F5A-4694-AA10-4A6B09065286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B4417B-5F5A-4694-AA10-4A6B09065286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B4417B-5F5A-4694-AA10-4A6B09065286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B4417B-5F5A-4694-AA10-4A6B09065286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617D3D18-085C-468A-B5C9-D22E39019557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617D3D18-085C-468A-B5C9-D22E39019557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617D3D18-085C-468A-B5C9-D22E39019557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617D3D18-085C-468A-B5C9-D22E39019557}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
