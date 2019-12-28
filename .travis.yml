@@ -1,0 +1,9 @@
+﻿language: csharp
+solution: XamarinApp.NetCoreWebApi.TravisBuild.sln
+
+dotnet: latest
+
+script:
+  - dotnet build NetCore.WebApi/NetCore.WebApi.csproj
+
+  
