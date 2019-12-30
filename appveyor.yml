@@ -2,5 +2,6 @@
 before_build:
  - nuget restore
 build_script:
+ - dotnet --version
  - dotnet build NetCore.WebApi/NetCore.WebApi.csproj
  - msbuild "Xamarin.Droid/Xamarin.Droid.csproj"
