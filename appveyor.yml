@@ -1,8 +1,26 @@
+version: 1.0.{build}
+
 image: Visual Studio 2019
 
+# environment variables
+environment:
+  webApiProject: NetCore.WebApi/NetCore.WebApi.csproj
+  xamarinAppProject: Xamarin.Droid/Xamarin.Droid.csproj
+  token:
+    secure: R/Ib9FseHc+V708pLGYCJ+MqRXVrPcYDnrz+u/O94GLt5YWvNEpkf28Z3bDrHRLm
+
+init:
+  - cmd: dotnet tool install -g dotnet-sonarscanner
+  - cmd: dotnet tool install -g coverlet.console
+install:
+before_build:
+  - cmd: dotnet --version
 before_build:
  - nuget restore
 build_script:
- - dotnet --version
- - dotnet build NetCore.WebApi/NetCore.WebApi.csproj
- - msbuild "Xamarin.Droid/Xamarin.Droid.csproj"
+  - cmd: dotnet-sonarscanner begin /k:"zanuccod_XamarinApp.NetCoreWebApi.TravisBuild " /d:sonar.organization="zanuccod" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login=%token%
+  - cmd: dotnet build %webApiProject%
+  - cmd: msbuild "%xamarinAppProject%"
+  - cmd: dotnet-sonarscanner end /d:sonar.login=%token%
+  
+deploy: off
