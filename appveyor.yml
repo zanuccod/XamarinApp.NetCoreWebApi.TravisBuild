@@ -20,9 +20,9 @@ install:
 before_build:
   - cmd: dotnet --version
   - cmd: nuget restore
-  - cmd: dotnet-sonarscanner begin /k:"zanuccod_XamarinApp.NetCoreWebApi.TravisBuild" /o:"zanuccod" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login=%token%
   
 build_script:
+  - cmd: dotnet-sonarscanner begin /k:"zanuccod_XamarinApp.NetCoreWebApi.TravisBuild" /o:"zanuccod" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login=%token%
   - cmd: dotnet build %webApiProject%
   - cmd: msbuild "%xamarinAppProject%"
 
