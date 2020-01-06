@@ -14,7 +14,6 @@ environment:
 init:
   - cmd: dotnet tool install -g dotnet-sonarscanner
   - cmd: dotnet tool install -g coverlet.console
-  - cmd: nuget install Appveyor.TestLogger -Version 2.0.0
 
 install:
 before_build:
@@ -25,8 +24,6 @@ build_script:
   - cmd: dotnet-sonarscanner begin /k:"zanuccod_XamarinApp.NetCoreWebApi.TravisBuild" /o:"zanuccod" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.login=%token%
   - cmd: dotnet build %webApiProject%
   - cmd: msbuild "%xamarinAppProject%"
-  - cmd: dotnet test %webApiProjecTest% /p:CollectCoverage=true /p:CoverletOutputFormat=json /p:CoverletOutput=../../TestResults/TestResult.json
-  - cmd: dotnet test %xamarinAppProjectTest% /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=../../TestResults/TestResult.xml /p:MergeWith=../../TestResults/TestResult.json
   - cmd: dotnet-sonarscanner end /d:sonar.login=%token%
   
 deploy: off
