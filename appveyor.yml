@@ -14,6 +14,7 @@ environment:
 init:
   - cmd: dotnet tool install -g dotnet-sonarscanner
   - cmd: dotnet tool install -g coverlet.console
+  - cmd: nuget install Appveyor.TestLogger -Version 2.0.0
 
 install:
 before_build:
