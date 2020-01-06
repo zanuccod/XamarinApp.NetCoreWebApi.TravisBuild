@@ -3,13 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Droid", "Xamarin.Droid\Xamarin.Droid.csproj", "{80B4417B-5F5A-4694-AA10-4A6B09065286}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.WebApi", "NetCore.WebApi\NetCore.WebApi.csproj", "{617D3D18-085C-468A-B5C9-D22E39019557}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F7B937D7-D94E-43A8-B4E0-091B75B4F05D}"
 	ProjectSection(SolutionItems) = preProject
 		.travis.yml = .travis.yml
 		appveyor.yml = appveyor.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.WebApi", "NetCore.WebApi\NetCore.WebApi.csproj", "{DFBD281F-A38A-4E20-AB25-57EF8C0F08F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetCore.WebApi.Test", "NetCore.WebApi.Test\NetCore.WebApi.Test.csproj", "{A9A38EA7-683C-45D1-8B0B-D7E7FDA8736E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xamarin.Droid.Test", "Xamarin.Droid.Test\Xamarin.Droid.Test.csproj", "{4F46696B-D34E-4F09-8E8E-DEEA559E7E32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +25,17 @@ Global
 		{80B4417B-5F5A-4694-AA10-4A6B09065286}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80B4417B-5F5A-4694-AA10-4A6B09065286}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{80B4417B-5F5A-4694-AA10-4A6B09065286}.Release|Any CPU.Build.0 = Release|Any CPU
-		{617D3D18-085C-468A-B5C9-D22E39019557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{617D3D18-085C-468A-B5C9-D22E39019557}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{617D3D18-085C-468A-B5C9-D22E39019557}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{617D3D18-085C-468A-B5C9-D22E39019557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFBD281F-A38A-4E20-AB25-57EF8C0F08F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFBD281F-A38A-4E20-AB25-57EF8C0F08F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFBD281F-A38A-4E20-AB25-57EF8C0F08F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFBD281F-A38A-4E20-AB25-57EF8C0F08F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A38EA7-683C-45D1-8B0B-D7E7FDA8736E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A38EA7-683C-45D1-8B0B-D7E7FDA8736E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A38EA7-683C-45D1-8B0B-D7E7FDA8736E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A38EA7-683C-45D1-8B0B-D7E7FDA8736E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F46696B-D34E-4F09-8E8E-DEEA559E7E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F46696B-D34E-4F09-8E8E-DEEA559E7E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F46696B-D34E-4F09-8E8E-DEEA559E7E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F46696B-D34E-4F09-8E8E-DEEA559E7E32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
