@@ -23,8 +23,10 @@ before_build:
   
 build_script:
   - cmd: dotnet build %webApiProject%
+  - cmd: dotnet build %webApiProjecTest%
   - cmd: msbuild "%xamarinAppProject%"
-
+  - cmd: dotnet build %xamarinAppProjectTest%
+  
 test_script:
   - cmd: dotnet test %webApiProjecTest% /p:CollectCoverage=true /p:CoverletOutputFormat=json /p:CoverletOutput=../../TestResults/TestResult.json
   - cmd: dotnet test %xamarinAppProjectTest% /p:CollectCoverage=true /p:CoverletOutputFormat=opencover /p:CoverletOutput=../../TestResults/TestResult.xml /p:MergeWith=../../TestResults/TestResult.json

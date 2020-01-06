@@ -35,5 +35,10 @@ namespace NetCore.WebApi.Controllers
             })
             .ToArray();
         }
+
+        public int TestMethod()
+        {
+            return 1;
+        }
     }
 }
